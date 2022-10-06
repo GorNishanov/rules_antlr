@@ -45,7 +45,7 @@ PACKAGES = {
     "antlr4_runtime": {
         "4.11.1": {
             "path": "org/antlr/antlr4-runtime/4.11.1/antlr4-runtime-4.11.1.jar",
-            "sha256": "2337df5d81e715b39aeea07aac46ad47e4f1f9e9cd7c899f124f425913efdcf8",
+            "sha256": "e06c6553c1ccc14d36052ec4b0fc6f13b808cf957b5b1dc3f61bf401996ada59",
         },
         "4.8": {
             "path": "org/antlr/antlr4-runtime/4.8/antlr4-runtime-4.8.jar",
