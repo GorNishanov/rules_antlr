@@ -13,12 +13,12 @@ PACKAGES = {
         "4.11.1": {
             "url": "https://github.com/antlr/antlr4/archive/4.11.1.tar.gz",
             "prefix": "antlr4-4.11.1",
-            "sha256": "992d52444b81ed75e52ea62f9f38ecb7652d5ce2a2130af143912b3042a6d77e",
+            "sha256": "81f87f03bb83b48da62e4fc8bfdaf447efb9fb3b7f19eb5cbc37f64e171218cf",
         },
         "4.8": {
             "url": "https://github.com/antlr/antlr4/archive/4.8.tar.gz",
             "prefix": "antlr4-4.8",
-            #"sha256": "992d52444b81ed75e52ea62f9f38ecb7652d5ce2a2130af143912b3042a6d77e",
+            "sha256": "992d52444b81ed75e52ea62f9f38ecb7652d5ce2a2130af143912b3042a6d77e",
         },
         "4.7.2": {
             "url": "https://github.com/antlr/antlr4/archive/4.7.2.tar.gz",
@@ -44,8 +44,8 @@ PACKAGES = {
     },
     "antlr4_runtime": {
         "4.11.1": {
-            "path": "org/antlr/antlr4-runtime/4.8/antlr4-runtime-4.11.jar",
-            #"sha256": "2337df5d81e715b39aeea07aac46ad47e4f1f9e9cd7c899f124f425913efdcf8",
+            "path": "org/antlr/antlr4-runtime/4.11.1/antlr4-runtime-4.11.1.jar",
+            "sha256": "2337df5d81e715b39aeea07aac46ad47e4f1f9e9cd7c899f124f425913efdcf8",
         },
         "4.8": {
             "path": "org/antlr/antlr4-runtime/4.8/antlr4-runtime-4.8.jar",
