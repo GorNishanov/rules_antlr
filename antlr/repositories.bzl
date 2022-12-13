@@ -192,7 +192,9 @@ def rules_antlr_dependencies(*versionsAndLanguages):
             languages = [JAVA]
 
         for version in sorted(versions, key = _toString):
-            if version == 4 or version == "4.8" or version == "4.11.1":
+            if version == 4 or version == "4.11.1":
+                _antlr4111_dependencies(languages)
+            if version == "4.8":
                 _antlr48_dependencies(languages)
             elif version == "4.7.2":
                 _antlr472_dependencies(languages)
@@ -229,6 +231,19 @@ def rules_antlr_optimized_dependencies(version):
         fail('Integer version \'{}\' no longer valid. Use semantic version "{}" instead.'.format(version, ".".join(str(version).elems())), attr = "version")
     else:
         fail('Unsupported ANTLR version provided: "{0}". Currently supported are: {1}'.format(version, v4_opt), attr = "version")
+
+def _antlr4111_dependencies(languages):
+    _antlr4_dependencies(
+        "4.11.1",
+        languages,
+        {
+            "antlr4_runtime": "4.11.1",
+            "antlr4_tool": "4.11.1",
+            "antlr3_runtime": "3.5.2",
+            "stringtemplate4": "4.3",
+            "javax_json": "1.0.4",
+        },
+    )
 
 def _antlr48_dependencies(languages):
     _antlr4_dependencies(
