@@ -192,7 +192,7 @@ def rules_antlr_dependencies(*versionsAndLanguages):
             languages = [JAVA]
 
         for version in sorted(versions, key = _toString):
-            if version == 4 or version == "4.8":
+            if version == 4 or version == "4.8" or version == "4.11.1":
                 _antlr48_dependencies(languages)
             elif version == "4.7.2":
                 _antlr472_dependencies(languages)
